@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar with Wishlist</title>
+    <link rel="stylesheet" href="C.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">VoyageVerse</div>
+        <ul>
+            <li><a href="v.html">Home</a></li>
+            <li><a href="Sign up.html">Sign Up</a></li>
+            <li><a href="Log in.html">Log In</a></li>
+            <li><a href="Wishlist.html">Wishlist</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search cities...">
+            <button onclick="searchCities()">Search</button>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="content">
+        <div class="country" id="India">India</div>
+        
+        <div class="carousel" id="carousel">
+            <div class="carousel-images">
+              <img src="https://travelfromindia.com/assets/uploads/news-118.jpg" alt="Image 1">
+              <img src="https://cdn.abhibus.com/2024/02/Kerala-Trip-Plan.jpg"alt="Image 2">
+              <img src="https://assets.serenity.co.uk/37000-37999/37620/720x480.jpg"alt="Image 3">
+              <img src="https://www.indiantravelstore.com/images/blogs/kashmir.webp"alt="Image 4">
+              <img src="https://www.mapsofindia.com/maps/rajasthan/images/rajasthan.jpg"alt="Image 5">
+            </div>
+          </div>
+          
+        <ul class="city-list">
+            <li>New Delhi<button class="wishlist-button" onclick="addToWishlist('New Delhi')">Add to Wishlist</button>
+            </li>
+            <li>Mumbai<button class="wishlist-button" onclick="addToWishlist('Mumbai')">Add to Wishlist</button></li>
+            <li>Chennai<button class="wishlist-button" onclick="addToWishlist('Chennai')">Add to Wishlist</button></li>
+            <li>Hyderabad<button class="wishlist-button" onclick="addToWishlist('Hyderabad')">Add to Wishlist</button></li>
+            <li>Kolkata<button class="wishlist-button" onclick="addToWishlist('Kolkata')">Add to Wishlist</button></li>
+            <li>Goa<button class="wishlist-button" onclick="addToWishlist('Goa')">Add to Wishlist</button></li>
+            <li>Banglore<button class="wishlist-button" onclick="addToWishlist('Banglore')">Add to Wishlist</button></li>
+            <li>Ooty<button class="wishlist-button" onclick="addToWishlist('Ooty')">Add to Wishlist</button></li>
+
+        </ul>
+
+        <div class="country" id="France">France</div>
+        <ul class="city-list">
+            <li>Paris <button class="wishlist-button" onclick="addToWishlist('Paris')">Add to Wishlist</button></li>
+            <li>Lyon <button class="wishlist-button" onclick="addToWishlist('Lyon')">Add to Wishlist</button></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
